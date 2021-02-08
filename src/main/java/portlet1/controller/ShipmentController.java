@@ -1,5 +1,6 @@
 package portlet1.controller;
 
+import portlet1.dto.CreateShipmentRequest;
 import portlet1.dto.User;
 
 import com.liferay.portletmvc4spring.bind.annotation.ActionMapping;
@@ -67,7 +68,7 @@ public class ShipmentController {
 
 	@RenderMapping
 	public String prepareView() {
-		return "user";
+		return "createShipment";
 	}
 
 	@RenderMapping(params = "javax.portlet.action=success")
@@ -85,5 +86,9 @@ public class ShipmentController {
 	@ModelAttribute("user")
 	private User _getUserModelAttribute() {
 		return new User();
+	}
+	@ModelAttribute("CreateShipmentRequest")
+	private CreateShipmentRequest _getCreateShipmentRequestModelAttribute() {
+		return new CreateShipmentRequest();
 	}
 }

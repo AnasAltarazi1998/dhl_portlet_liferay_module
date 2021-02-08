@@ -10,13 +10,13 @@
 	<portlet:actionURL var="mainFormActionURL"/>
 	<form:form id="${namespace}mainForm" action="${mainFormActionURL}" class="user-form" method="post" modelAttribute="CreateShipmentRequest">
 		<p class="caption">
-			<spring:message code="header-value" />
+			<spring:message code="headerValue" />
 		</p>
 		<fieldset>
 			<div class="form-group">
 				<form:label for="${namespace}product" path="product">
 					<spring:message code="product" />
-				</form:label>
+				</form:label>	
 				<form:input id="${namespace}product" cssClass="form-control" path="product"/>
 				<form:errors path="product" cssClass="portlet-msg-error"/>
 			</div>

@@ -1,10 +1,15 @@
 package portlet1.dto;
 
 
+import java.io.Serializable;
 import java.util.*;
 
-public class CreateShipmentResponse
+public class CreateShipmentResponse implements Serializable
 {
+    /**
+     *
+     */
+    private static final long serialVersionUID = -1279685881348980044L;
     String shipment_number;
     String statusCode;
     String statusText;
