@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+		  xmlns:portlet="http://xmlns.jcp.org/portlet_3_0"
+		  xmlns:spring="http://www.springframework.org/tags"
+		  version="2.1">
+	<jsp:directive.page contentType="text/html" pageEncoding="UTF-8" />
+	<portlet:defineObjects/>
+	<link href="${contextPath}/resources/css/main.css" rel="stylesheet" type="text/css"/>
+	<p class="user-greeting">
+		<spring:message arguments="${shipmentNumber}" code="shipmentNumber" />
+	</p>
+	<p class="user-greeting">
+		<spring:message arguments="${statusMessage}" code="statusMessage" />
+	</p>
+	<a class="user-greeting" href="${labelUrl}" >
+		label url 
+	</a>
+</jsp:root>

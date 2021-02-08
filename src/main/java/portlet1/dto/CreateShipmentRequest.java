@@ -9,7 +9,7 @@ public class CreateShipmentRequest implements Serializable  {
   
     
     String product;
-    String accountNumber;
+    String accountNumber = "";
     String customerReference;
     String shipmentDate;
     String weight;

@@ -25,7 +25,9 @@
 				<form:label for="${namespace}accountNumber" path="accountNumber">
 					<spring:message code="accountNumber" />
 				</form:label>
-				<form:input id="${namespace}accountNumber" cssClass="form-control" path="accountNumber"/>
+				<br />
+				${accountNumberError}
+				<form:input id="${namespace}accountNumber" cssClass="form-control" path="accountNumber" value=""/>
 				<form:errors path="accountNumber" cssClass="portlet-msg-error"/>
 			</div>
 			
@@ -42,7 +44,7 @@
 				<form:label for="${namespace}shipmentDate" path="shipmentDate">
 					<spring:message code="shipmentDate" />
 				</form:label>
-				<form:input id="${namespace}shipmentDate" cssClass="form-control" path="shipmentDate"/>
+				<form:input type="date" id="${namespace}shipmentDate" cssClass="form-control" path="shipmentDate"/>
 				<form:errors path="shipmentDate" cssClass="portlet-msg-error"/>
 			</div>
 

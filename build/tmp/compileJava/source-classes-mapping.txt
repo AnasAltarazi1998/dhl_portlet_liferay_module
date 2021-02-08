@@ -1,4 +1,0 @@
-portlet1/controller/UserController.java
- portlet1.controller.UserController
-portlet1/dto/User.java
- portlet1.dto.User
